@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { View, Text, TextInput, FlatList, Image, TouchableOpacity, ActivityIndicator, StyleSheet, Animated, Easing } from 'react-native';
 import useSuperheroApi from '../hooks/useSuperheroApi';
 
-export default function DashboardScreen({ navigation }) {
+export default function BatDataBase({ navigation }) {
   const [search, setSearch] = useState('');
   const [query, setQuery] = useState('');
   const { data, loading, error } = useSuperheroApi(query);
